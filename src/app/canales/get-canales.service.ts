@@ -9,15 +9,21 @@ export class GetCanalesService {
   constructor(private sanitizer: DomSanitizer) { }
 
   public html: SafeHtml = '<p>Some default HTML</p>';
-  public current: string = "";
+  public data: string[] = [];
   public view: string = "";
   public safeHtml: SafeHtml = this.sanitizer.bypassSecurityTrustHtml(this.view);
   
 
   public onButtonClick(html: string): void {
-    this.view = `<div> <iframe scrolling='no' src='${html}' style='border: 0px none; margin-left: 30px; height: 550px; width: 680px;'> </iframe> </div> `;
+    if(html!==undefined){
+        this.view = `<div class="video"> 
+                     <iframe scrolling='no' src='${html}'/>
+                    </div> 
+                `;
     this.safeHtml = this.sanitizer.bypassSecurityTrustHtml(this.view);
     this.html = this.safeHtml;
+    }
+    
   }
 
   public jsonCanales: any = [
@@ -68,7 +74,74 @@ export class GetCanalesService {
         "logo":"https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Disney_wordmark.svg/1200px-Disney_wordmark.svg.png",
         "url":"https://ustvgo.tv/disney-channel-live-streaming-free/",
         "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+    },
+    {
+        "name":"Disney XD",
+        "logo":"https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Logo_Disney_XD.svg/1200px-Logo_Disney_XD.svg.png",
+        "url":"https://ustvgo.tv/disneyxd/",
+        "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+    },
+    {
+        "name":"ESPN",
+        "logo":"https://1000marcas.net/wp-content/uploads/2020/02/logo-ESPN.png",
+        "url":"https://ustvgo.tv/espn-live/",
+        "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+    },
+    {
+        "name":"FOX",
+        "logo":"https://www.pngitem.com/pimgs/m/452-4529718_fox-channel-fox-channel-png-download-fox-logo.png",
+        "url":"https://ustvgo.tv/fox-hd-live-streaming/",
+        "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+    },
+    {
+        "name":"HBO",
+        "logo":"https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/HBO_logo.svg/2560px-HBO_logo.svg.png",
+        "url":"https://ustvgo.tv/hbo/",
+        "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+    },
+    {
+        "name":"Lifetime",
+        "logo":"https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Lifetime_tv_logo.svg/1200px-Lifetime_tv_logo.svg.png",
+        "url":"https://ustvgo.tv/lifetime-channel-live/",
+        "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+    },
+    {
+        "name":"MTV",
+        "logo":"https://1000marcas.net/wp-content/uploads/2021/10/MTV-logo.png",
+        "url":"https://ustvgo.tv/mtv/",
+        "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+    },
+    {
+        "name":"National Geographic",
+        "logo":"https://1000marcas.net/wp-content/uploads/2020/03/logo-National-Geographic.png",
+        "url":"https://ustvgo.tv/national-geographic-live/",
+        "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+    },
+    {
+        "name":"NBC",
+        "logo":"https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/NBC_Peacock_1986.svg/1200px-NBC_Peacock_1986.svg.png",
+        "url":"https://ustvgo.tv/nbc/",
+        "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+    },
+    {
+        "name":"Nickelodeon",
+        "logo":"https://1000marcas.net/wp-content/uploads/2020/03/logo-Nickelodeon.png",
+        "url":"https://ustvgo.tv/nickelodeon-live-streaming-free/",
+        "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+    },
+    {
+        "name":"Paramount Network",
+        "logo":"https://upload.wikimedia.org/wikipedia/commons/5/5d/Paramount_Network_logo.png",
+        "url":"https://ustvgo.tv/paramount-network/",
+        "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+    },
+    {
+        "name":"Science",
+        "logo":"https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Science_Channel_logo.svg/1200px-Science_Channel_logo.svg.png",
+        "url":"https://ustvgo.tv/science/",
+        "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry."
     }
-];
+    ];
+    
 
 }

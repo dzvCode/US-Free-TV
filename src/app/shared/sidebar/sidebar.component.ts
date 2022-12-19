@@ -12,9 +12,12 @@ constructor( private getCanalesService: GetCanalesService) {}
 
 public jsonCanales = this.getCanalesService.jsonCanales;
 
-seleccionar(url : string) {
-  this.getCanalesService.current = url;
-  console.log(url);
+seleccionar(url : string, logo : string, name : string) {
+  this.getCanalesService.data[0] = url;
+  this.getCanalesService.data[1] = logo;
+  this.getCanalesService.data[2] = name;
+  console.log("sidebar"+url);
+  console.log("sidebar"+logo);  
 }
 
 }

@@ -1,4 +1,8 @@
 <div *ngIf="html">
     {{ mostrarCanal()}}
+    <div *ngIf="logo !==undefined" class="channelTitle">
+        <img id="logo" src={{logo}} alt="hola chamo"/>
+        <h2>{{name}}</h2>
+    </div>
     <div #htmlContainer [innerHTML]="html"></div>
 </div>
