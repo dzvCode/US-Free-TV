@@ -10,10 +10,11 @@ body{
     object-fit: scale-down;
 }
 
-iframe{
+/*VIDEO*/
+.frameVideo{
     border: 0px none; 
     margin-left: -34px; 
-    height: 550px; 
+    height: 700px; 
     margin-top: -206px; 
     width: 680px;
 }
@@ -21,13 +22,16 @@ iframe{
 .video{
     overflow: hidden; 
     max-width: 611px;
-    transform: scale(1.5);
+    transform: scale(1.6);
     transform-origin: 0% 0% 0px;
-    margin-top: 85px;
+    margin-top: 15px;
 }
 
 #logo{
-    width: 50px;
+    height: 80px;
+}
+.name{
+    padding-top: 10px;
 }
 
 .channelTitle{

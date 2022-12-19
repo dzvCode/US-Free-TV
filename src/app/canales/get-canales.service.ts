@@ -16,14 +16,16 @@ export class GetCanalesService {
 
   public onButtonClick(html: string): void {
     if(html!==undefined){
-        this.view = `<div class="video"> 
-                     <iframe scrolling='no' src='${html}'/>
+        this.view = `
+                    <div class='channel'>                         
+                        <div class='video'> 
+                            <iframe class='frameVideo' scrolling='no' src='${html}'></iframe>                                                                              
+                        </div>                                               
                     </div> 
                 `;
     this.safeHtml = this.sanitizer.bypassSecurityTrustHtml(this.view);
     this.html = this.safeHtml;
     }
-    
   }
 
   public jsonCanales: any = [
