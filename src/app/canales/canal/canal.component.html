@@ -1,26 +1,4 @@
 <div *ngIf="html">
+    {{ mostrarCanal()}}
     <div #htmlContainer [innerHTML]="html"></div>
-</div>
-
-<div class="row" >
-    <div *ngFor="let canal of jsonCanales"
-         class="col-md-4 col-sm-6 animate__animated animate__fadeIn">
-
-        <div class="card" style="width: 18rem" >
-            <img [src]="canal.logo"
-                 [alt]="canal.name"
-                 width="50%" height="50%" 
-                 class="card-img-top"
-            >      
-            
-            <div class="card-body">
-                <p class="card-text text-center">
-                    <button (click)="onButtonClick(canal.url)"> WATCH LIVE </button>
-                </p>
-            </div>
-        </div>
-
-        <br>
-
-    </div>
 </div>
