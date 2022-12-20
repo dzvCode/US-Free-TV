@@ -11,6 +11,7 @@ export class SidebarComponent {
 constructor( private getCanalesService: GetCanalesService) {}
 
 public jsonCanales = this.getCanalesService.jsonCanales;
+public state: boolean[] = [];
 
 seleccionar(url : string, logo : string, name : string) {
   this.getCanalesService.data[0] = url;
@@ -18,6 +19,20 @@ seleccionar(url : string, logo : string, name : string) {
   this.getCanalesService.data[2] = name;
   console.log("sidebar"+url);
   console.log("sidebar"+logo);  
+}
+
+onButtonGroupClick($event:any){
+  let clickedElement = $event.target || $event.srcElement;
+  if( clickedElement.nodeName === "BUTTON" ) {
+    let isCertainButtonAlreadyActive = clickedElement.parentElement.querySelector(".active");
+    // if a Button already has Class: .active
+    if( isCertainButtonAlreadyActive ) {
+      isCertainButtonAlreadyActive.classList.remove("active");
+    }
+
+    clickedElement.className += " active";
+  }
+
 }
 
 }
