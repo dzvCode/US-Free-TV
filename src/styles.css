@@ -17,8 +17,7 @@ body{
     padding-left: 20px;
     margin-bottom: 15px;
     border-radius: 10px;
-    font-size: smaller;
-    font-weight: 500;
+    font-weight: 700;
     border: 0px none; 
     background-color: #3B3B3B;
     color: #FCFCFC;
@@ -44,7 +43,6 @@ body{
 
 .list-group-item:hover{
     color: #1A1A1A;
-    font-weight: 500;
 }
 
 .list-group-item:hover::after{
@@ -67,8 +65,8 @@ body{
 /*VIDEO*/
 .frameVideo{
     border: 0px none; 
-    margin-left: -34px; 
-    height: 700px; 
+    margin-left: -85px; 
+    height: 530px; 
     margin-top: -206px; 
     width: 630px;
 }
@@ -76,16 +74,16 @@ body{
 .video{
     overflow: hidden; 
     max-width: 611px;
-    transform: scale(1.5);
+    transform: scale(2.2);
     transform-origin: 0% 0% 0px;
     margin-top: 15px;
-    padding-left: 50px;
+    padding-left: 100px;
 }
 
 #logo{
-    height: 80px;
-    padding-left: 20px;
-    padding-top: 10px;
+    height: 130px;
+    padding-left: 100px;
+    padding-top: 30px;
 }
 .name{
     padding-top: 10px;
@@ -93,4 +91,58 @@ body{
 
 .channelTitle{
     padding-bottom: 0px;
+}
+
+/*Responsive*/
+@media screen and (max-width: 1564px){
+    .video{
+        transform: scale(2.0);
+    }
+    .frameVideo{
+        margin-left: -80px;
+    }
+}
+
+@media screen and (max-width: 1446px){
+    .video{
+        transform: scale(1.8);
+    }
+    .frameVideo{
+        margin-left: -75px;
+    }
+}
+
+@media screen and (max-width: 1323px){
+    .video{
+        transform: scale(1.6);
+    }
+    .frameVideo{
+        margin-left: -67px;
+    }
+}
+
+@media screen and (max-width: 1197px){
+    .video{
+        transform: scale(1.4);
+        padding-left: 70px;
+    }
+    .frameVideo{
+        margin-left: -56px;
+    }
+    #logo{
+        padding-left: 70px;
+    }
+}
+
+@media screen and (max-width: 1069px){
+    .video{
+        transform: scale(1.1);
+        padding-left: 40px;
+    }
+    .frameVideo{
+        margin-left: -29px;
+    }
+    #logo{
+        padding-left: 40px;
+    }
 }
