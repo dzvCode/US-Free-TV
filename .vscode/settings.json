@@ -1,3 +1,5 @@
 {
-    "liveServer.settings.port": 5501
+    "liveServer.settings.port": 5501,
+    "appService.defaultWebAppToDeploy": "/subscriptions/fd1def66-24dd-4f82-ba64-96000f4e4c58/AppServices/subscriptions/fd1def66-24dd-4f82-ba64-96000f4e4c58/resourceGroups/vpnfisi/providers/Microsoft.Web/sites/usfreetv",
+    "appService.deploySubpath": "dist\\us-free-tv"
 }

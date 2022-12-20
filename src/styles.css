@@ -94,7 +94,7 @@ body{
 }
 
 /*Responsive*/
-@media screen and (max-width: 1564px){
+@media screen and (max-width: 1700px){
     .video{
         transform: scale(2.0);
     }
@@ -103,7 +103,7 @@ body{
     }
 }
 
-@media screen and (max-width: 1446px){
+@media screen and (max-width: 1520px){
     .video{
         transform: scale(1.8);
     }
@@ -112,7 +112,7 @@ body{
     }
 }
 
-@media screen and (max-width: 1323px){
+@media screen and (max-width: 1400px){
     .video{
         transform: scale(1.6);
     }
@@ -121,7 +121,7 @@ body{
     }
 }
 
-@media screen and (max-width: 1197px){
+@media screen and (max-width: 1300px){
     .video{
         transform: scale(1.4);
         padding-left: 70px;
@@ -134,9 +134,9 @@ body{
     }
 }
 
-@media screen and (max-width: 1069px){
+@media screen and (max-width: 1150px){
     .video{
-        transform: scale(1.1);
+        transform: scale(1.2);
         padding-left: 40px;
     }
     .frameVideo{
@@ -145,4 +145,12 @@ body{
     #logo{
         padding-left: 40px;
     }
+}
+
+@media screen and (max-width: 1000px){
+    .video{
+        transform: scale(1.0);
+        padding-left: 40px;
+    }
+
 }
