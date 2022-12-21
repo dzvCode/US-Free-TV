@@ -189,7 +189,7 @@ html,body{
 
 @media screen and (max-height: 800px){
     .list-group{
-        height: 72vh;
+        height: 76vh;
     }
     .video{
         transform: scale(1.5);       
@@ -201,7 +201,7 @@ html,body{
 
 @media screen and (max-height: 700px){
     .list-group{
-        height: 68vh;
+        height: 72vh;
     }
     .video{
         transform: scale(1.3);       
