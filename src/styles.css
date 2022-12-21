@@ -186,6 +186,6 @@ html,body{
 
 @media screen and (max-height: 800px){
     .video{
-        transform: scale(1.6);       
+        transform: scale(1.5);       
     }
 }
