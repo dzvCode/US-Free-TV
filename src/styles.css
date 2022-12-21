@@ -188,10 +188,25 @@ html,body{
 }
 
 @media screen and (max-height: 800px){
+    .list-group{
+        height: 72vh;
+    }
     .video{
         transform: scale(1.5);       
     }
     #logo{
         height: 80px;
+    }
+}
+
+@media screen and (max-height: 700px){
+    .list-group{
+        height: 68vh;
+    }
+    .video{
+        transform: scale(1.3);       
+    }
+    #logo{
+        height: 65px;
     }
 }
