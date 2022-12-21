@@ -1,11 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
-body{
+html,body{
+    width: 100%;
+	height: 100%;
     background-color:#1A1A1A;
     color: aliceblue;
+    overflow: hidden;
 }
 
+/*Custom sidebar*/
 #sidebar{
     background-color: #3B3B3B;
+    width: 300px;
+}
+
+.list-group{
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+/*Custom scrollbar*/
+.list-group::-webkit-scrollbar
+{
+    border-radius: 10px;
+	width: 2px;
+	display: none;
 }
 
 /*Sidebar animation*/
@@ -19,6 +37,7 @@ body{
     border-radius: 10px;
     font-weight: 700;
     border: 0px none; 
+    width: 90%;
     background-color: #3B3B3B;
     color: #FCFCFC;
     transition: all .85s;
