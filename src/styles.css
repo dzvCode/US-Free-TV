@@ -180,7 +180,7 @@ html,body{
 
 @media screen and (max-height: 900px){
     .video{
-        transform: scale(1.9);        
+        transform: scale(1.8);        
     }
 }
 
