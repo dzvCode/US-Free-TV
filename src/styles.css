@@ -4,7 +4,7 @@ html,body{
 	height: 100%;
     background-color:#1A1A1A;
     color: aliceblue;
-    overflow: hidden;
+    overflow-y: hidden;
 }
 
 /*Custom sidebar*/
@@ -22,16 +22,19 @@ html,body{
 .list-group::-webkit-scrollbar
 {
     border-radius: 10px;
-	width: 2px;
+	width: 0px;
 	display: none;
 }
 
 /*Sidebar animation*/
+
 .list-group-item:first-child, .list-group-item:last-child{
+    margin-top: 10px;
     border-radius: 10px;
 }
 
 .list-group-item{
+    margin-left: 10px;
     padding-left: 20px;
     margin-bottom: 15px;
     border-radius: 10px;
