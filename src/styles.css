@@ -182,10 +182,16 @@ html,body{
     .video{
         transform: scale(1.8);        
     }
+    #logo{
+        height: 100px;
+    }
 }
 
 @media screen and (max-height: 800px){
     .video{
         transform: scale(1.5);       
+    }
+    #logo{
+        height: 80px;
     }
 }
